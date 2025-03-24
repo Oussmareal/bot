@@ -1,3 +1,13 @@
+import os
+print("Starting bot...")
+
+session = os.getenv("SESSION_NAME")
+if session:
+    print("Session Loaded Successfully")
+else:
+    print("Error: SESSION_NAME is empty!")
+
+
 from telethon import TelegramClient, events
 import asyncio
 import json
